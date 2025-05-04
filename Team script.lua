@@ -21,6 +21,7 @@ Frame.SizeConstraint = Enum.SizeConstraint.RelativeXY
 Frame.ZIndex = 1
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.5, 0, 0.5, 0)
+Frame.Active = true
 Frame.Draggable = true
 
 
