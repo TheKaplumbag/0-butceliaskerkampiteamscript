@@ -21,6 +21,7 @@ Frame.SizeConstraint = Enum.SizeConstraint.RelativeXY
 Frame.ZIndex = 1
 Frame.BorderSizePixel = 1
 Frame.Size = UDim2.new(0.5, 0, 0.5, 0)
+Frame.Draggable = true
 
 
 local X = Instance.new("TextButton", Frame)
@@ -240,6 +241,7 @@ TextButton5.Name = "Open"
 TextButton5.TextSize = 10
 TextButton5.TextScaled = true
 TextButton5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton5.Draggable = true
 
 
 TextButton1.MouseButton1Click:Connect(function()
