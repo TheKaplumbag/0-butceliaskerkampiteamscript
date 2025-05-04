@@ -3,7 +3,7 @@ local reFolder = game.workspace:WaitForChild("takimdegistirici")
 local ScreenGui = Instance.new("ScreenGui", game.Players.LocalPlayer:WaitForChild("PlayerGui"))
 ScreenGui.Name = "Ustaaa"
 ScreenGui.DisplayOrder = 0
-ScreenGui.ResetOnSpawn = true
+ScreenGui.ResetOnSpawn = false
 ScreenGui.IgnoreGuiInset = false
 ScreenGui.Archivable = true
 
