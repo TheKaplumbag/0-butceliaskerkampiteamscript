@@ -1,4 +1,4 @@
-local reFolder = game.workspace:WaitForChild("RemoteEvents") or game.Players.LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("RemoteEvents")
+local reFolder = game.workspace:WaitForChild("RemoteEvents") or game.Players.LocalPlayer.PlayerGui:WaitForChild("RemoteEvents")
 
 local ScreenGui = Instance.new("ScreenGui", game.Players.LocalPlayer:WaitForChild("PlayerGui"))
 ScreenGui.Name = "Ustaaa"
