@@ -155,17 +155,17 @@ TextButton3.ZIndex = 1
 TextButton3.BorderSizePixel = 1
 TextButton3.Size = UDim2.new(0.30000001192092896, 0, 0.20000000298023224, 0)
 TextButton3.TextColor3 = Color3.new(0.49803924560546875, 0.24705883860588074, 0)
-TextButton3.Text = "KKK"
+TextButton3.Text = "DKK"
 TextButton3.Archivable = true
 TextButton3.AutoButtonColor = true
 TextButton3.Rotation = 0
 TextButton3.Font = Enum.Font.Legacy
 TextButton3.BackgroundTransparency = 0
 TextButton3.Position = UDim2.new(0, 0, 0.20000000298023224, 0)
-TextButton3.Name = "KKK"
+TextButton3.Name = "DKK"
 TextButton3.TextSize = 8
 TextButton3.TextScaled = true
-TextButton3.BackgroundColor3 = Color3.new(0.49803924560546875, 0.24705883860588074, 0)
+TextButton3.BackgroundColor3 = Color3.new(0, 0, 150)
 
 
 local UIStroke2 = Instance.new("UIStroke", TextButton3)
@@ -251,13 +251,15 @@ reFolder.OKK:FireServer()
 TextButton2.MouseButton1Click:Connect(function()
 reFolder.ASIZ:FireServer()
   end)
-TextButton2.MouseButton1Click:Connect(function()
-reFolder.KKK:FireServer()
+TextButton3.MouseButton1Click:Connect(function()
+reFolder.DKK:FireServer()
   end)
 TextButton4.MouseButton1Click:Connect(function()
 reFolder.HKK:FireServer()
   end)
-
+--TextButton6.MouseButton1Click:Connect(function()
+-- reFolder.OG:FireServer()
+--end)
 
 X.MouseButton1Click:Connect(function()
 Frame.Visible = not Frame.Visible
