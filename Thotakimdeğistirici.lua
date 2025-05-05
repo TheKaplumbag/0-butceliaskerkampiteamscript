@@ -245,6 +245,43 @@ TextButton5.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton5.Draggable = true
 
 
+local TextButton6 = Instance.new("TextButton", Frame)
+TextButton6.Visible = true
+TextButton6.TextWrapped = true
+TextButton6.TextStrokeColor3 = Color3.new(0, 0, 0)
+TextButton6.TextStrokeTransparency = 1
+TextButton6.AnchorPoint = Vector2.new(0, 0)
+TextButton6.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton6.ZIndex = 1
+TextButton6.BorderSizePixel = 1
+TextButton6.Size = UDim2.new(0.30000001192092896, 0, 0.20000000298023224, 0)
+TextButton6.TextColor3 = Color3.new(255, 0, 0)
+TextButton6.Text = "General"
+TextButton6.Archivable = true
+TextButton6.AutoButtonColor = true
+TextButton6.Rotation = 0
+TextButton6.Font = Enum.Font.Legacy
+TextButton6.BackgroundTransparency = 0
+TextButton6.Position = UDim2.new(0.6, 10, 0.2, 0)
+TextButton6.Name = "General"
+TextButton6.TextSize = 8
+TextButton6.TextScaled = true
+TextButton6.BackgroundColor3 = Color3.new(255, 0, 0)
+
+local UICorner6 = Instance.new("UICorner", TextButton6)
+UICorner5.Archivable = true
+UICorner5.Name = "UICorner"
+
+local UIStroke6 = Instance.new("UIStroke", TextButton6)
+UIStroke3.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+UIStroke3.Transparency = 0
+UIStroke3.Name = "UIStroke"
+UIStroke3.Color = Color3.new(255, 255, 255)
+UIStroke3.Archivable = true
+UIStroke3.Thickness = 3
+
+
+
 TextButton1.MouseButton1Click:Connect(function()
 reFolder.OKK:FireServer()
   end)
@@ -257,9 +294,9 @@ reFolder.DKK:FireServer()
 TextButton4.MouseButton1Click:Connect(function()
 reFolder.HKK:FireServer()
   end)
---TextButton6.MouseButton1Click:Connect(function()
--- reFolder.OG:FireServer()
---end)
+TextButton6.MouseButton1Click:Connect(function()
+reFolder.OG:FireServer()
+end)
 
 X.MouseButton1Click:Connect(function()
 Frame.Visible = not Frame.Visible
