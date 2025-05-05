@@ -269,16 +269,52 @@ TextButton6.TextScaled = true
 TextButton6.BackgroundColor3 = Color3.new(255, 0, 0)
 
 local UICorner6 = Instance.new("UICorner", TextButton6)
-UICorner5.Archivable = true
-UICorner5.Name = "UICorner"
+UICorner6.Archivable = true
+UICorner6.Name = "UICorner"
 
 local UIStroke6 = Instance.new("UIStroke", TextButton6)
-UIStroke3.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
-UIStroke3.Transparency = 0
-UIStroke3.Name = "UIStroke"
-UIStroke3.Color = Color3.new(255, 255, 255)
-UIStroke3.Archivable = true
-UIStroke3.Thickness = 3
+UIStroke6.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+UIStroke6.Transparency = 0
+UIStroke6.Name = "UIStroke"
+UIStroke6.Color = Color3.new(255, 255, 255)
+UIStroke6.Archivable = true
+UIStroke6.Thickness = 3
+
+
+local TextButton7 = Instance.new("TextButton", Frame)
+TextButton7.Visible = true
+TextButton7.TextWrapped = true
+TextButton7.TextStrokeColor3 = Color3.new(0, 0, 0)
+TextButton7.TextStrokeTransparency = 1
+TextButton7.AnchorPoint = Vector2.new(0, 0)
+TextButton7.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton7.ZIndex = 1
+TextButton7.BorderSizePixel = 1
+TextButton7.Size = UDim2.new(0.30000001192092896, 0, 0.20000000298023224, 0)
+TextButton7.TextColor3 = Color3.new(0, 0, 255)
+TextButton7.Text = "JGK"
+TextButton7.Archivable = true
+TextButton7.AutoButtonColor = true
+TextButton7.Rotation = 0
+TextButton7.Font = Enum.Font.Legacy
+TextButton7.BackgroundTransparency = 0
+TextButton7.Position = UDim2.new(0, 0, 0.4, 0)
+TextButton7.Name = "JGK"
+TextButton7.TextSize = 8
+TextButton7.TextScaled = true
+TextButton7.BackgroundColor3 = Color3.new(0, 0, 255)
+
+local UICorner7 = Instance.new("UICorner", TextButton7)
+UICorner7.Archivable = true
+UICorner7.Name = "UICorner"
+
+local UIStroke7 = Instance.new("UIStroke", TextButton7)
+UIStroke7.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+UIStroke7.Transparency = 0
+UIStroke7.Name = "UIStroke"
+UIStroke7.Color = Color3.new(255, 255, 255)
+UIStroke7.Archivable = true
+UIStroke7.Thickness = 3
 
 
 
@@ -296,6 +332,10 @@ reFolder.HKK:FireServer()
   end)
 TextButton6.MouseButton1Click:Connect(function()
 reFolder.OG:FireServer()
+  end)
+
+TextButton7.MouseButton1Click:Connect(function()
+reFolder.JGK:FireServer()
   end)
 
 X.MouseButton1Click:Connect(function()
