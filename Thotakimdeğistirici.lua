@@ -296,7 +296,7 @@ reFolder.HKK:FireServer()
   end)
 TextButton6.MouseButton1Click:Connect(function()
 reFolder.OG:FireServer()
-end)
+  end)
 
 X.MouseButton1Click:Connect(function()
 Frame.Visible = not Frame.Visible
